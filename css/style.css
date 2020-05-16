@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0;
+}
+
+body{
+    background: rgb(225, 238, 243);
+}
+
+.display{
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 19px;
+    flex-direction: column;
+    word-break: break-all;
+    word-wrap: break-word;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+button{
+    border: none;
+    border: 1px solid #fff;
+    background: #222;
+    color: #eee;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    background: green;
+}
+
+#plus-btn{
+    padding: 45px 0;
+}
+
+.card{
+    position: relative;
+}
+
+.card::after{
+    position: absolute;
+    display: block;
+    content: '';
+    height: 80.2%;
+    right: 0;
+    bottom: 0;
+    width: 5.2%;
+    background: linear-gradient(green, #66ccff);
+}
+
+@media screen and (max-width: 768px){
+    
+}
